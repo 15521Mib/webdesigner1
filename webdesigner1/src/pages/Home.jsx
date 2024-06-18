@@ -1,4 +1,4 @@
-import data from '../../artigos.json'
+import data from '../../artigos1.json'
 
 function Home() {
     console.log(data)
