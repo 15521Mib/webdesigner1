@@ -21,16 +21,17 @@ function Filmes() {
 
 return ( 
     <>        
-    <h1>Filmes</h1>
-    <div className="ListadeFilmes flex flex-row gap-3">
+    <h1>Filmes populares</h1>
+    <div className="ListadeFilmes grid grid-cols-3 gap-3 w-[1200px]">
         {
             filmes.map(
                 filme => (
-                <div className="card-filme" key={filme.id}>
+                <div className="card-filme text-center" key={filme.id}>
                      <img className="w=auto" src={`${urlImg}${filme.poster_path}`}/> 
                      <h1>{filme.title}</h1>
                      <Link to={`${filme.id}`} className="bg-blue-500">Saber mais</Link>
                 </div>
+                
             ))
     }
     </div>

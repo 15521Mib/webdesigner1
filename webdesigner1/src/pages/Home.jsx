@@ -9,7 +9,7 @@ function Home() {
                 {
                     data.map( 
                         filme => (
-                            <div className='lista-filmes' key={filme.title}>
+                            <div className='lista-filmes w-[350px]' key={filme.title}>
                             <h1 >{filme.title}</h1>
                             <img src={filme.image} alt={filme.title} />
                             <div className='tag'>
